@@ -133,5 +133,13 @@ motd-values:
   # MOTD при потере соединения
   disconnected: "&#ff5555M&#ff6161o&#ff6e6es&#ff7a7aV&#ff8686i&#ff9292n\n&#ffaaaaСоединение с координатором потеряно"
 
-
+# ============================================
+# КОМАНДА /admintg (Telegram привязка)
+# ============================================
+telegram:
+  usage: "§cИспользование: /admintg <код>\n§7Получите код, написав боту /start в Telegram"
+  invalid-code-format: "§cКод должен состоять из 10 цифр!"
+  validating: "§eПроверка кода... Подождите..."
+  bind-success: "§a{message}"
+  bind-error: "§c{message}"
 
