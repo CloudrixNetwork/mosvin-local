@@ -104,6 +104,26 @@ connection:
   restored: "§aСвязь с игровым координатором восстановлена!"
 
 # ============================================
+# КОМАНДА /whois
+# ============================================
+whois:
+  usage: "§cИспользование: /whois <ник>"
+  database-not-configured: "§cБаза данных не настроена!"
+  player-not-found: "§cИгрок {player} не найден в базе данных!"
+  offline: "Оффлайн"
+  version-unknown: "Неизвестно"
+  header: "§7" # Используется для разделителя (повторяется)
+  footer: "§7" # Используется для разделителя (повторяется)
+  player: "§b§lИнформация об игроке: §e{player}"
+  id: "§aID: §e{id}"
+  uuid: "§aUUID: §e{uuid}"
+  registration-ip: "§aIP регистрации: §e{registration-ip}"
+  registration-date: "§aДата регистрации: §e{registration-date}"
+  current-ip: "§aТекущий IP: §e{current-ip}"
+  current-server: "§aТекущий сервер: §e{current-server}"
+  version: "§aВерсия клиента: §e{version}"
+
+# ============================================
 # MOTD (Message of the Day)
 # ============================================
 motd-values:
