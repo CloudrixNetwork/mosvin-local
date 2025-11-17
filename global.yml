@@ -121,7 +121,7 @@ whois:
   registration-date: "§aДата регистрации: §e{registration-date}"
   current-ip: "§aТекущий IP: §e{current-ip}"
   current-server: "§aТекущий сервер: §e{current-server}"
-  version: "§aВерсия клиента: §e{version}"
+  version: "§2Версия клиента: §e{version}"
 
 # ============================================
 # MOTD (Message of the Day)
@@ -132,4 +132,5 @@ motd-values:
   
   # MOTD при потере соединения
   disconnected: "&#ff5555M&#ff6161o&#ff6e6es&#ff7a7aV&#ff8686i&#ff9292n\n&#ffaaaaСоединение с координатором потеряно"
+
 
