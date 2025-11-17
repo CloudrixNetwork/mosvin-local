@@ -1,0 +1,115 @@
+# Global Translations for CoreMosvin Connector
+# Этот файл хранится в GitHub репозитории: https://github.com/CloudrixNetwork/mosvin-local
+# Формат: ключ: значение (поддерживает цветовые коды & и hex-цвета &#rrggbb)
+
+# ============================================
+# ОБЩИЕ СООБЩЕНИЯ
+# ============================================
+general:
+  no-permission: "§cУ вас нет прав для использования этой команды!"
+  player-only: "§cЭта команда доступна только игрокам!"
+  console-name: "Консоль"
+  unknown: "неизвестно"
+  separator: "§7" # Используется для разделителей (повторяется)
+
+# ============================================
+# КОМАНДА /status
+# ============================================
+status:
+  not-connected: "§cНе удалось подключиться к Core системе."
+  requesting: "§eЗапрос статуса сервера {server}..."
+  header-online: "§a=== Статус сервера {server} ==="
+  header-offline: "§c=== Статус сервера {server} ==="
+  status-online: "§aСтатус: §2ONLINE"
+  status-offline: "§cСтатус: §4OFFLINE"
+  players: "§aИгроков: §e{count}"
+  tps: "§aTPS: §e{tps}"
+
+# ============================================
+# КОМАНДА /hub
+# ============================================
+hub:
+  server-not-found: "§cСервер hub-1 не найден в конфигурации BungeeCord!"
+  already-on-hub: "§eВы уже находитесь на сервере hub!"
+  hub-not-found: "§cСервер hub не найден!"
+  connecting: "§aПодключение к серверу hub..."
+
+# ============================================
+# КОМАНДА /staff
+# ============================================
+staff:
+  no-staff-online: "§cНа сервере нет персонала онлайн."
+  header: "§b§lПерсонал онлайн §7({count})"
+  rank-format: "§7[§b{rank}§7] {players}"
+  player-format: "§e{player}§7 (§a{server}§7)"
+
+# ============================================
+# КОМАНДА /splaytime
+# ============================================
+playtime:
+  usage: "§cИспользование: /splaytime <игрок>"
+  player-not-found: "§cИгрок {player} не найден онлайн!"
+  cannot-determine: "§cНе удалось определить игрока!"
+  header: "§b§lСтатистика игры: §e{player}"
+  today: "§aСегодня: §e{time}"
+  week: "§aНеделя: §e{time}"
+  month: "§aМесяц: §e{time}"
+  year: "§aГод: §e{time}"
+  time-format-hours: "{hours} ч. {minutes} мин."
+  time-format-minutes: "{minutes} мин."
+
+# ============================================
+# КОМАНДА /sc (Staff Chat)
+# ============================================
+staffchat:
+  usage: "§cИспользование: /sc <сообщение>"
+  format: "˙ {prefix}{player} §7{server}§7: §f{message}"
+
+# ============================================
+# КОМАНДА /coremotd
+# ============================================
+motd:
+  usage: "§cИспользование: /coremotd reload"
+  reload-success: "§aMOTD успешно перезагружен!"
+  reload-config: "§aКонфигурация перезагружена!"
+  current-motd: "§7Текущий MOTD (соединение {status}§7):"
+  connection-active: "§aактивно"
+  connection-lost: "§cпотеряно"
+  motd-preview: "§f{motd}"
+  motd-not-set: "§eMOTD не задан в конфиге. Используется стандартный MOTD BungeeCord."
+  reload-error: "§cОшибка при перезагрузке MOTD: {error}"
+
+# ============================================
+# КОМАНДА /translations
+# ============================================
+translations:
+  usage: "§cИспользование: /translations reload"
+  reloading: "§eЗагрузка переводов с GitHub..."
+  reload-success: "§aПереводы успешно обновлены!"
+  reload-error: "§cОшибка при загрузке переводов: {error}"
+  using-cache: "§eИспользуется локальный кэш (GitHub недоступен)"
+  cache-updated: "§aКэш переводов обновлен"
+
+# ============================================
+# СОБЫТИЯ ИГРОКОВ
+# ============================================
+events:
+  staff-join: "§7[§bStaff§7] {prefix}{player} §7зашел на сервер"
+  staff-quit: "§7[§bStaff§7] {prefix}§e{player} §7вышел с сервера §7(наиграл сегодня: §a{playtime}§7)"
+
+# ============================================
+# СОЕДИНЕНИЕ С CORE
+# ============================================
+connection:
+  restored: "§aСвязь с игровым координатором восстановлена!"
+
+# ============================================
+# MOTD (Message of the Day)
+# ============================================
+motd-values:
+  # Обычный MOTD (когда соединение активно)
+  normal: "&#ff5555M&#ff6161o&#ff6e6es&#ff7a7aV&#ff8686i&#ff9292n\n&#aaffaaВанильный сервер 1.21.8"
+  
+  # MOTD при потере соединения
+  disconnected: "&#ff5555M&#ff6161o&#ff6e6es&#ff7a7aV&#ff8686i&#ff9292n\n&#ffaaaaСоединение с координатором потеряно"
+
