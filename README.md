@@ -1,1 +1,1 @@
-"# mosvin-local" 
+# Сообщения сервера MosVin 
