@@ -1,60 +1,59 @@
-# Global Translations for CoreMosvin Connector
-# Этот файл хранится в GitHub репозитории: https://github.com/CloudrixNetwork/mosvin-local
-# Формат: ключ: значение (поддерживает цветовые коды & и hex-цвета &#rrggbb)
+# Формат: ключ: значение (поддерживает hex-цвета &#rrggbb)
+# Цветовая схема: &#ff5026 - важные моменты, &#e0e0e0 - нейтральный текст, &#ffffff - белый
 
 # ============================================
 # ОБЩИЕ СООБЩЕНИЯ
 # ============================================
 general:
-  no-permission: "§cУ вас нет прав для использования этой команды!"
-  player-only: "§cЭта команда доступна только игрокам!"
+  no-permission: "&#ff5026У вас нет прав для использования этой команды!"
+  player-only: "&#ff5026Эта команда доступна только игрокам!"
   console-name: "Консоль"
   unknown: "неизвестно"
-  separator: "§7" # Используется для разделителей (повторяется)
+  separator: "&#e0e0e0" # Используется для разделителей (повторяется)
 
 # ============================================
 # КОМАНДА /status
 # ============================================
 status:
-  not-connected: "§cНе удалось подключиться к Core системе."
-  requesting: "§eЗапрос статуса сервера {server}..."
-  header-online: "§a=== Статус сервера {server} ==="
-  header-offline: "§c=== Статус сервера {server} ==="
-  status-online: "§aСтатус: §2ONLINE"
-  status-offline: "§cСтатус: §4OFFLINE"
-  players: "§aИгроков: §e{count}"
-  tps: "§aTPS: §e{tps}"
+  not-connected: "&#ff5026Не удалось подключиться к Core системе."
+  requesting: "&#e0e0e0Запрос статуса сервера {server}..."
+  header-online: "&#ffffff=== Статус сервера {server} ==="
+  header-offline: "&#ff5026=== Статус сервера {server} ==="
+  status-online: "&#ffffffСтатус: &#00ff00ONLINE"
+  status-offline: "&#ff5026Статус: &#ff0000OFFLINE"
+  players: "&#ffffffИгроков: &#e0e0e0{count}"
+  tps: "&#ffffffTPS: &#e0e0e0{tps}"
 
 # ============================================
 # КОМАНДА /hub
 # ============================================
 hub:
-  server-not-found: "§cСервер hub-1 не найден в конфигурации BungeeCord!"
-  already-on-hub: "§eВы уже находитесь на сервере hub!"
-  hub-not-found: "§cСервер hub не найден!"
-  connecting: "§aПодключение к серверу hub..."
+  server-not-found: "&#ff5026Сервер hub-1 не найден в конфигурации BungeeCord!"
+  already-on-hub: "&#e0e0e0Вы уже находитесь на сервере hub!"
+  hub-not-found: "&#ff5026Сервер hub не найден!"
+  connecting: "&#ffffffПодключение к серверу hub..."
 
 # ============================================
 # КОМАНДА /staff
 # ============================================
 staff:
-  no-staff-online: "§cНа сервере нет персонала онлайн."
-  header: "§b§lПерсонал онлайн §7({count})"
-  rank-format: "§7[§b{rank}§7] {players}"
-  player-format: "§e{player}§7 (§a{server}§7)"
+  no-staff-online: "&#ff5026На сервере нет персонала онлайн."
+  header: "&#ffffffПерсонал онлайн &#e0e0e0({count})"
+  rank-format: "&#e0e0e0[&#ffffff{rank}&#e0e0e0] {players}"
+  player-format: "&#ffffff{player}&#e0e0e0 (&#00ff00{server}&#e0e0e0)"
 
 # ============================================
 # КОМАНДА /splaytime
 # ============================================
 playtime:
-  usage: "§cИспользование: /splaytime <игрок>"
-  player-not-found: "§cИгрок {player} не найден онлайн!"
-  cannot-determine: "§cНе удалось определить игрока!"
-  header: "§b§lСтатистика игры: §e{player}"
-  today: "§aСегодня: §e{time}"
-  week: "§aНеделя: §e{time}"
-  month: "§aМесяц: §e{time}"
-  year: "§aГод: §e{time}"
+  usage: "&#ff5026Использование: /splaytime <игрок>"
+  player-not-found: "&#ff5026Игрок {player} не найден онлайн!"
+  cannot-determine: "&#ff5026Не удалось определить игрока!"
+  header: "&#ffffffСтатистика игры: &#e0e0e0{player}"
+  today: "&#ffffffСегодня: &#e0e0e0{time}"
+  week: "&#ffffffНеделя: &#e0e0e0{time}"
+  month: "&#ffffffМесяц: &#e0e0e0{time}"
+  year: "&#ffffffГод: &#e0e0e0{time}"
   time-format-hours: "{hours} ч. {minutes} мин."
   time-format-minutes: "{minutes} мин."
 
@@ -62,84 +61,96 @@ playtime:
 # КОМАНДА /sc (Staff Chat)
 # ============================================
 staffchat:
-  usage: "§cИспользование: /sc <сообщение>"
-  format: "˙ {prefix}{player} §7{server}§7: §f{message}"
+  usage: "&#ff5026Использование: /sc <сообщение>"
+  format: "˙ {prefix}{player} &#e0e0e0{server}&#e0e0e0: &#ffffff{message}"
 
 # ============================================
 # КОМАНДА /coremotd
 # ============================================
 motd:
-  usage: "§cИспользование: /coremotd reload"
-  reload-success: "§aMOTD успешно перезагружен!"
-  reload-config: "§aКонфигурация перезагружена!"
-  current-motd: "§7Текущий MOTD (соединение {status}§7):"
-  connection-active: "§aактивно"
-  connection-lost: "§cпотеряно"
-  motd-preview: "§f{motd}"
-  motd-not-set: "§eMOTD не задан в конфиге. Используется стандартный MOTD BungeeCord."
-  reload-error: "§cОшибка при перезагрузке MOTD: {error}"
+  usage: "&#ff5026Использование: /coremotd reload"
+  reload-success: "&#00ff00MOTD успешно перезагружен!"
+  reload-config: "&#00ff00Конфигурация перезагружена!"
+  current-motd: "&#e0e0e0Текущий MOTD (соединение {status}&#e0e0e0):"
+  connection-active: "&#00ff00активно"
+  connection-lost: "&#ff5026потеряно"
+  motd-preview: "&#ffffff{motd}"
+  motd-not-set: "&#e0e0e0MOTD не задан в конфиге. Используется стандартный MOTD BungeeCord."
+  reload-error: "&#ff5026Ошибка при перезагрузке MOTD: {error}"
 
 # ============================================
 # КОМАНДА /translations
 # ============================================
 translations:
-  usage: "§cИспользование: /translations reload"
-  reloading: "§eЗагрузка переводов с GitHub..."
-  reload-success: "§aПереводы успешно обновлены!"
-  reload-error: "§cОшибка при загрузке переводов: {error}"
-  using-cache: "§eИспользуется локальный кэш (GitHub недоступен)"
-  cache-updated: "§aКэш переводов обновлен"
+  usage: "&#ff5026Использование: /translations reload"
+  reloading: "&#e0e0e0Загрузка переводов с GitHub..."
+  reload-success: "&#00ff00Переводы успешно обновлены!"
+  reload-error: "&#ff5026Ошибка при загрузке переводов: {error}"
+  using-cache: "&#e0e0e0Используется локальный кэш (GitHub недоступен)"
+  cache-updated: "&#00ff00Кэш переводов обновлен"
 
 # ============================================
 # СОБЫТИЯ ИГРОКОВ
 # ============================================
 events:
-  staff-join: "§7[§bStaff§7] {prefix}{player} §7зашел на сервер"
-  staff-quit: "§7[§bStaff§7] {prefix}§e{player} §7вышел с сервера §7(наиграл сегодня: §a{playtime}§7)"
+  staff-join: "&#e0e0e0[&#ffffffStaff&#e0e0e0] {prefix}{player} &#e0e0e0зашел на сервер"
+  staff-quit: "&#e0e0e0[&#ffffffStaff&#e0e0e0] {prefix}&#ffffff{player} &#e0e0e0вышел с сервера &#e0e0e0(наиграл сегодня: &#00ff00{playtime}&#e0e0e0)"
 
 # ============================================
 # СОЕДИНЕНИЕ С CORE
 # ============================================
 connection:
-  restored: "§aСвязь с игровым координатором восстановлена!"
+  restored: "&#00ff00Связь с игровым координатором восстановлена!"
 
 # ============================================
 # КОМАНДА /whois
 # ============================================
 whois:
-  usage: "§cИспользование: /whois <ник>"
-  database-not-configured: "§cБаза данных не настроена!"
-  player-not-found: "§cИгрок {player} не найден в базе данных!"
+  usage: "&#ff5026Использование: /whois <ник>"
+  database-not-configured: "&#ff5026База данных не настроена!"
+  player-not-found: "&#ff5026Игрок {player} не найден в базе данных!"
   offline: "Оффлайн"
   version-unknown: "Неизвестно"
-  header: "§7" # Используется для разделителя (повторяется)
-  footer: "§7" # Используется для разделителя (повторяется)
-  player: "§b§lИнформация об игроке: §e{player}"
-  id: "§aID: §e{id}"
-  uuid: "§aUUID: §e{uuid}"
-  registration-ip: "§aIP регистрации: §e{registration-ip}"
-  registration-date: "§aДата регистрации: §e{registration-date}"
-  current-ip: "§aТекущий IP: §e{current-ip}"
-  current-server: "§aТекущий сервер: §e{current-server}"
-  version: "§aВерсия клиента: §e{version}"
+  header: "&#e0e0e0" # Используется для разделителя (повторяется)
+  footer: "&#e0e0e0" # Используется для разделителя (повторяется)
+  player: "&#ffffffИнформация об игроке: &#e0e0e0{player}"
+  id: "&#ffffffID: &#e0e0e0{id}"
+  uuid: "&#ffffffUUID: &#e0e0e0{uuid}"
+  registration-ip: "&#ffffffIP регистрации: &#e0e0e0{registration-ip}"
+  registration-date: "&#ffffffДата регистрации: &#e0e0e0{registration-date}"
+  current-ip: "&#ffffffТекущий IP: &#e0e0e0{current-ip}"
+  current-server: "&#ffffffТекущий сервер: &#e0e0e0{current-server}"
+  version: "&#ffffffВерсия клиента: &#e0e0e0{version}"
 
 # ============================================
 # MOTD (Message of the Day)
 # ============================================
 motd-values:
   # Обычный MOTD (когда соединение активно)
-  normal: "&#ff5555M&#ff6161o&#ff6e6es&#ff7a7aV&#ff8686i&#ff9292n\n&#aaffaaВанильный сервер 1.21.8"
+  normal: "&#ff5026M&#ff5530o&#ff5a3as&#ff5f45V&#ff6450i&#ff695bn\n&#ffffffВанильный сервер 1.21.8"
   
   # MOTD при потере соединения
-  disconnected: "&#ff5555M&#ff6161o&#ff6e6es&#ff7a7aV&#ff8686i&#ff9292n\n&#ffaaaaСоединение с координатором потеряно"
+  disconnected: "&#ff5026M&#ff5530o&#ff5a3as&#ff5f45V&#ff6450i&#ff695bn\n&#ff5026Соединение с координатором потеряно"
 
 # ============================================
 # КОМАНДА /admintg (Telegram привязка)
 # ============================================
 telegram:
-  usage: "§cИспользование: /admintg <код>\n§7Получите код, написав боту /start в Telegram"
-  invalid-code-format: "§cКод должен состоять из 10 цифр!"
-  validating: "§eПроверка кода... Подождите..."
-  bind-success: "§a{message}"
-  bind-error: "§c{message}"
+  usage: "&#ff5026Использование: /admintg <код>\n&#e0e0e0Получите код, написав боту /start в Telegram"
+  invalid-code-format: "&#ff5026Код должен состоять из 10 цифр!"
+  validating: "&#e0e0e0Проверка кода... Подождите..."
+  bind-success: "&#00ff00{message}"
+  bind-error: "&#ff5026{message}"
 
+# ============================================
+# СИСТЕМА РЕСТАРТА
+# ============================================
+restart:
+  # Сообщение при рестарте одного сервера
+  server-countdown: "&#ff5026[РЕСТАРТ] &#e0e0e0Сервер перезагрузится через &#ff5026{seconds} &#e0e0e0секунд"
+  
+  # Сообщение при полном рестарте всех серверов
+  all-servers-warning: "&#ff5026[РЕСТАРТ] &#e0e0e0Сервер MOSVIN будет ПОЛНОСТЬЮ перезапущен через &#ff502610 &#e0e0e0секунд"
+  
+  # Сообщение при полном рестарте (отсчет)
+  all-servers-countdown: "&#ff5026[РЕСТАРТ] &#e0e0e0Сервер перезагрузится через &#ff5026{seconds} &#e0e0e0секунд"
