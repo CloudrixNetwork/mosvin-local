@@ -154,3 +154,16 @@ restart:
   
   # Сообщение при полном рестарте (отсчет)
   all-servers-countdown: "&#ff5026[РЕСТАРТ] &#e0e0e0Сервер перезагрузится через &#ff5026{seconds} &#e0e0e0секунд"
+
+module:
+  usage: "&#ff5026Использование: &#e0e0e0/module <list|load|unload|reload|info> [название]"
+  list-header: "&#ff5026=== Список модулей ==="
+  loaded-modules: "&#ff5026Загруженные модули:"
+  available-modules: "&#e0e0e0Доступные модули:"
+  no-modules: "&#e0e0e0Модули не найдены"
+  info-header: "&#ff5026=== Информация о модуле"
+  load-usage: "&#ff5026Использование: &#e0e0e0/module load <название>"
+  unload-usage: "&#ff5026Использование: &#e0e0e0/module unload <название>"
+  reload-usage: "&#ff5026Использование: &#e0e0e0/module reload <название>"
+  info-usage: "&#ff5026Использование: &#e0e0e0/module info <название>"
+  unknown-subcommand: "&#ff5026Неизвестная подкоманда. Используйте: &#e0e0e0/module <list|load|unload|reload|info>"
